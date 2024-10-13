@@ -10,6 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FormViewController" customModule="formularioDinamico" customModuleProvider="target">
             <connections>
+                <outlet property="stackView" destination="uz8-kV-jY6" id="4Ww-6h-hAj"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -23,7 +24,18 @@
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tRN-6Z-V1m">
                             <rect key="frame" x="0.0" y="0.0" width="440" height="860"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="uz8-kV-jY6">
+                                    <rect key="frame" x="0.0" y="0.0" width="440" height="860"/>
+                                </stackView>
+                            </subviews>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="uz8-kV-jY6" secondAttribute="trailing" id="XFg-QY-yhY"/>
+                                <constraint firstItem="uz8-kV-jY6" firstAttribute="top" secondItem="tRN-6Z-V1m" secondAttribute="top" id="Yzq-QO-RQu"/>
+                                <constraint firstItem="uz8-kV-jY6" firstAttribute="leading" secondItem="tRN-6Z-V1m" secondAttribute="leading" id="iea-De-3QM"/>
+                                <constraint firstAttribute="bottom" secondItem="uz8-kV-jY6" secondAttribute="bottom" id="rgI-fz-Jau"/>
+                            </constraints>
                         </view>
                     </subviews>
                     <constraints>
